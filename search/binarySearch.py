@@ -14,6 +14,7 @@ def binarySearch(case, target):
 	while low <= high:
 		mid = (low + high) / 2
 		guess = case[mid]
+		
 		if guess == target:
 			print mid
 			return mid
@@ -21,6 +22,8 @@ def binarySearch(case, target):
 			high = mid - 1
 		else:
 			low = mid + 1
+	print "N/A"
 	return None
 
 binarySearch(case1, 1)
+binarySearch(case1, 4)
